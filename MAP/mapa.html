@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3aa9c492991a44b6a84b11b6680e2a6e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3aa9c492991a44b6a84b11b6680e2a6e" ></div>
+        
+</body>
+<script>    
+    
+            var map_3aa9c492991a44b6a84b11b6680e2a6e = L.map(
+                "map_3aa9c492991a44b6a84b11b6680e2a6e",
+                {
+                    center: [23.5, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_995d5bba1fec4a83826fc95ea8c9b803 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3aa9c492991a44b6a84b11b6680e2a6e);
+        
+    
+            var marker_cluster_115472de08904679a44e986f35733a71 = L.markerClusterGroup(
+                {}
+            );
+            map_3aa9c492991a44b6a84b11b6680e2a6e.addLayer(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var marker_491fcb67937a4ae2ab078eada77183e1 = L.marker(
+                [24.139334, 120.611165],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_c3ad74bf11f04287b82f5681ad722db6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_491fcb67937a4ae2ab078eada77183e1.setIcon(icon_c3ad74bf11f04287b82f5681ad722db6);
+        
+    
+        var popup_4e73d46bad604430add56067d51adc46 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_aa74564ee6644adda8debb4ef652fa21 = $(`<div id="html_aa74564ee6644adda8debb4ef652fa21" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台    中市南屯區義芳街82號<br><br>房型：雅房套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：4000/月<br><br>設備：天然瓦斯、熱水器、書桌、椅 子、床舖、衣櫥、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林太太<br><br>房東電話：04-23892022<br><br>認證：A(2) 認證標章編號 D091500026</div>`)[0];
+            popup_4e73d46bad604430add56067d51adc46.setContent(html_aa74564ee6644adda8debb4ef652fa21);
+        
+
+        marker_491fcb67937a4ae2ab078eada77183e1.bindPopup(popup_4e73d46bad604430add56067d51adc46)
+        ;
+
+        
+    
+    
+            var marker_a63c7304e8234941b43caf6b14953b9e = L.marker(
+                [24.139006, 120.610365],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_81130d274f354bd8a5f30ea4c7c77337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a63c7304e8234941b43caf6b14953b9e.setIcon(icon_81130d274f354bd8a5f30ea4c7c77337);
+        
+    
+        var popup_1dcf9775cebf429aa2e1cd89b136046b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_65c682de8d02442cb08fd573daaf1e40 = $(`<div id="html_65c682de8d02442cb08fd573daaf1e40" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路100號<br><br>房型：套房<br><br>坪數：5-8坪<br><br>付款方式：學期繳<br><br>房租：18000-30000/ 學期<br><br>設備：熱水器、桌椅、床鋪、衣櫥、電話、冰箱、冷氣、脫水機、飲水 機、滅火器、電梯<br><br>房東姓名：陳先生<br><br>房東電話：04-23892913 0928-932913<br><br>認證：A(8) 認證標章編號 D091500033</div>`)[0];
+            popup_1dcf9775cebf429aa2e1cd89b136046b.setContent(html_65c682de8d02442cb08fd573daaf1e40);
+        
+
+        marker_a63c7304e8234941b43caf6b14953b9e.bindPopup(popup_1dcf9775cebf429aa2e1cd89b136046b)
+        ;
+
+        
+    
+    
+            var marker_21448de639e447ffa3b71c54e6d1b484 = L.marker(
+                [24.139266, 120.61139],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_c8afb6fd166846ed9fcb7b13a8c46d9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21448de639e447ffa3b71c54e6d1b484.setIcon(icon_c8afb6fd166846ed9fcb7b13a8c46d9b);
+        
+    
+        var popup_9743098cd3394d42ad7655aa1647dc12 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_65426fc809cb4c69b66a7b54bdaee116 = $(`<div id="html_65426fc809cb4c69b66a7b54bdaee116" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區義芳街86號<br><br>房型：套房<br><br>坪數：5-6坪<br><br>付款方式：半年繳<br><br>房租：30000-31000 /半年(含水電瓦 斯費網路)<br><br>設備：瓦斯、桌椅、床鋪、衣櫥、電視、冰箱、冷氣、風扇、飲水 機、滅火器<br><br>房東姓名：林小姐<br><br>房東電話：04-23823797 0919-806916<br><br>認證：A 認證標章編號 D091500043</div>`)[0];
+            popup_9743098cd3394d42ad7655aa1647dc12.setContent(html_65426fc809cb4c69b66a7b54bdaee116);
+        
+
+        marker_21448de639e447ffa3b71c54e6d1b484.bindPopup(popup_9743098cd3394d42ad7655aa1647dc12)
+        ;
+
+        
+    
+    
+            var marker_0c4ecb96ac784a57af95d18a9955ac46 = L.marker(
+                [24.138343, 120.612229],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_b3dd71863fe94b01b9769f6f0905c53f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c4ecb96ac784a57af95d18a9955ac46.setIcon(icon_b3dd71863fe94b01b9769f6f0905c53f);
+        
+    
+        var popup_e1b8ef963d17418ca10e0c99616a5ad6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_465bb60d320b4c4c9ee56636e8b7c0dc = $(`<div id="html_465bb60d320b4c4c9ee56636e8b7c0dc" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台    中市南屯區永春南路41巷3、5號<br><br>房型：套房<br><br>坪數：3.8-5 坪<br><br>付款方式：學期繳<br><br>房租：5000-6000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、雙人床、桌椅、網路、第四 台<br><br>房東姓名：林小姐<br><br>房東電話：0937-197589 04-23808033<br><br>認證：A 認證標章編號 LTU1020101</div>`)[0];
+            popup_e1b8ef963d17418ca10e0c99616a5ad6.setContent(html_465bb60d320b4c4c9ee56636e8b7c0dc);
+        
+
+        marker_0c4ecb96ac784a57af95d18a9955ac46.bindPopup(popup_e1b8ef963d17418ca10e0c99616a5ad6)
+        ;
+
+        
+    
+    
+            var marker_01b6cbda73e34e12a3d8901bb3b09cf1 = L.marker(
+                [24.140304, 120.611656],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_a7c4c3b29b904fc2885fa0255fde6b5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01b6cbda73e34e12a3d8901bb3b09cf1.setIcon(icon_a7c4c3b29b904fc2885fa0255fde6b5f);
+        
+    
+        var popup_8ef077830afe4cf7b526f508ba395152 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d4884bbdb20047c0acd59cbc82117b33 = $(`<div id="html_d4884bbdb20047c0acd59cbc82117b33" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區永春北路55號  (清水YANG)啟宇營造<br><br>房型：套房<br><br>坪數：5.5~8 坪<br><br>付款方式：半年繳<br><br>房租：6000-8500/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、單人床、書櫃、桌 椅、網路、第四台、機車停車場<br><br>房東姓名：謝小姐<br><br>房東電話：04-23828022<br><br>認證：A 認證標章編號 LTU1020104</div>`)[0];
+            popup_8ef077830afe4cf7b526f508ba395152.setContent(html_d4884bbdb20047c0acd59cbc82117b33);
+        
+
+        marker_01b6cbda73e34e12a3d8901bb3b09cf1.bindPopup(popup_8ef077830afe4cf7b526f508ba395152)
+        ;
+
+        
+    
+    
+            var marker_be352bb3c7a64d7ebb2ca59773d6fbb0 = L.marker(
+                [24.139182, 120.611032],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_d37faf3c513f42d881565564a41ca5ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be352bb3c7a64d7ebb2ca59773d6fbb0.setIcon(icon_d37faf3c513f42d881565564a41ca5ba);
+        
+    
+        var popup_8fb9a9dc90664163b1447f5db93a6503 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_565e989a32744868b1a9030aef1907b9 = $(`<div id="html_565e989a32744868b1a9030aef1907b9" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路82巷13號<br><br>房型：雅房<br><br>坪數：3坪<br><br>付款方式：學期繳<br><br>房租：4000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、雙人床、桌椅<br><br>房東姓名：朱媽媽<br><br>房東電話：04-23892057<br><br>認證：A(5) 認證標章編號 LTU114</div>`)[0];
+            popup_8fb9a9dc90664163b1447f5db93a6503.setContent(html_565e989a32744868b1a9030aef1907b9);
+        
+
+        marker_be352bb3c7a64d7ebb2ca59773d6fbb0.bindPopup(popup_8fb9a9dc90664163b1447f5db93a6503)
+        ;
+
+        
+    
+    
+            var marker_75a07219bbdb4765a542352aaa0ed72c = L.marker(
+                [24.139245, 120.610404],
+                {}
+            ).addTo(marker_cluster_115472de08904679a44e986f35733a71);
+        
+    
+            var icon_707f2761c3d14ea38ed13a11f4bae1c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75a07219bbdb4765a542352aaa0ed72c.setIcon(icon_707f2761c3d14ea38ed13a11f4bae1c9);
+        
+    
+        var popup_8996975db8234204aaeaab936dfd1c3a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f507039744dd44ac8126712499eaec11 = $(`<div id="html_f507039744dd44ac8126712499eaec11" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區義芳街83號2樓<br><br>房型：套房<br><br>坪數：6坪<br><br>付款方式：月繳<br><br>房租：5500-6000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、雙人床、桌椅、網路、第四 台<br><br>房東姓名：徐小姐<br><br>房東電話：0952-663358<br><br>認證：A 認證標章編號 LTU1070002</div>`)[0];
+            popup_8996975db8234204aaeaab936dfd1c3a.setContent(html_f507039744dd44ac8126712499eaec11);
+        
+
+        marker_75a07219bbdb4765a542352aaa0ed72c.bindPopup(popup_8996975db8234204aaeaab936dfd1c3a)
+        ;
+
+        
+    
+</script>

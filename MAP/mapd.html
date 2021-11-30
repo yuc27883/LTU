@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_46db63b1071d4d19a060e53ad7f19842 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_46db63b1071d4d19a060e53ad7f19842" ></div>
+        
+</body>
+<script>    
+    
+            var map_46db63b1071d4d19a060e53ad7f19842 = L.map(
+                "map_46db63b1071d4d19a060e53ad7f19842",
+                {
+                    center: [23.5, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f4da235c9654343a8ee6d84a52fe550 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_46db63b1071d4d19a060e53ad7f19842);
+        
+    
+            var marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9 = L.markerClusterGroup(
+                {}
+            );
+            map_46db63b1071d4d19a060e53ad7f19842.addLayer(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var marker_81e206a3ae4c4fb9a7936101139bc9fc = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_f55f9872723d4cf3b6be707cf6c366d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81e206a3ae4c4fb9a7936101139bc9fc.setIcon(icon_f55f9872723d4cf3b6be707cf6c366d5);
+        
+    
+        var popup_3612b74ebab84e9f85b7f6742b3d4753 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_204a7547af654f6194c61108ad2e572c = $(`<div id="html_204a7547af654f6194c61108ad2e572c" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區永春南路61巷12-12號  (嶺東太子)<br><br>房型：套房<br><br>坪數：4-5坪<br><br>付款方式：季繳<br><br>房租：6300/月<br><br>設備：電視、冰箱、冷氣、熱水器、衣櫃、桌椅、單人床、網路、第四 台<br><br>房東姓名：張先生<br><br>房東電話：0922-447584<br><br>認證：A(2) 認證標章編號 D091500023</div>`)[0];
+            popup_3612b74ebab84e9f85b7f6742b3d4753.setContent(html_204a7547af654f6194c61108ad2e572c);
+        
+
+        marker_81e206a3ae4c4fb9a7936101139bc9fc.bindPopup(popup_3612b74ebab84e9f85b7f6742b3d4753)
+        ;
+
+        
+    
+    
+            var marker_d94f0fdbb4a144bca6e3395694183a1a = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_6bb3a0a243be44d5b6c74831817da0c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d94f0fdbb4a144bca6e3395694183a1a.setIcon(icon_6bb3a0a243be44d5b6c74831817da0c7);
+        
+    
+        var popup_b0d855e13cef494f98fbff1850f25f07 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e19329a54299493bbfda0131564ed71b = $(`<div id="html_e19329a54299493bbfda0131564ed71b" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區永春南路61巷12-23號  (嶺東太子)<br><br>房型：套房<br><br>坪數：6坪<br><br>付款方式：學期繳<br><br>房租：6500/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、雙人床、桌椅、網 路、第四台<br><br>房東姓名：張小姐<br><br>房東電話：0919-365455<br><br>認證：A 認證標章編號 LTU1060122</div>`)[0];
+            popup_b0d855e13cef494f98fbff1850f25f07.setContent(html_e19329a54299493bbfda0131564ed71b);
+        
+
+        marker_d94f0fdbb4a144bca6e3395694183a1a.bindPopup(popup_b0d855e13cef494f98fbff1850f25f07)
+        ;
+
+        
+    
+    
+            var marker_2fe1a58282fc4dfcb031e7e59b2827fd = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_1f754e46045943e49900f73eac4215bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2fe1a58282fc4dfcb031e7e59b2827fd.setIcon(icon_1f754e46045943e49900f73eac4215bb);
+        
+    
+        var popup_e79b5b4ab995448d88d023f02f075048 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b33e166025314ed584bb102daeec4310 = $(`<div id="html_b33e166025314ed584bb102daeec4310" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區永春南路61巷12-26號  (嶺東太子)<br><br>房型：套房<br><br>坪數：4-5坪<br><br>付款方式：半年繳<br><br>房租：4900起/月<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、飲水機、網路、 冷氣<br><br>房東姓名：許小姐<br><br>房東電話：0988-929867<br><br>認證：A(1) 認證標章編號 LTU106002</div>`)[0];
+            popup_e79b5b4ab995448d88d023f02f075048.setContent(html_b33e166025314ed584bb102daeec4310);
+        
+
+        marker_2fe1a58282fc4dfcb031e7e59b2827fd.bindPopup(popup_e79b5b4ab995448d88d023f02f075048)
+        ;
+
+        
+    
+    
+            var marker_1491d4464414420aa854e119c0e2b11e = L.marker(
+                [24.13825, 120.611445],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_cbe8bfeae6fa41efac8a5f32e29d308a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1491d4464414420aa854e119c0e2b11e.setIcon(icon_cbe8bfeae6fa41efac8a5f32e29d308a);
+        
+    
+        var popup_51771c11bb46465383ea0b6a9888e0d0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c863e9f7c60f4d4cb115ea90abf1a271 = $(`<div id="html_c863e9f7c60f4d4cb115ea90abf1a271" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區永春南路61巷12-7號<br><br>房型：套房<br><br>坪數：4坪<br><br>付款方式：學期繳<br><br>房租：6500/月<br><br>設備：冰箱、冷氣、洗衣機、衣櫃、雙人床、桌椅、網路、Wifi、熱水 器、飲水機<br><br>房東姓名：李小姐<br><br>房東電話：0910-842856<br><br>認證：A(1) 認證標章編號 LTU109</div>`)[0];
+            popup_51771c11bb46465383ea0b6a9888e0d0.setContent(html_c863e9f7c60f4d4cb115ea90abf1a271);
+        
+
+        marker_1491d4464414420aa854e119c0e2b11e.bindPopup(popup_51771c11bb46465383ea0b6a9888e0d0)
+        ;
+
+        
+    
+    
+            var marker_01be598ad12f4aaca151f185fbf54471 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_ea7adbc56dc64da4a704d1e54973c06e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01be598ad12f4aaca151f185fbf54471.setIcon(icon_ea7adbc56dc64da4a704d1e54973c06e);
+        
+    
+        var popup_dd91d8d03a094220adc1350935147fe8 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_dc4812bbe79e4be3b0f8c893c9389788 = $(`<div id="html_dc4812bbe79e4be3b0f8c893c9389788" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址： 台中市南屯區永春南路61巷12-9號(嶺  東太子)<br><br>房型：套房<br><br>坪數：7.5坪<br><br>付款方式：學期繳<br><br>房租：7000~8000/月 (可住兩人)<br><br>設備：熱水器、桌椅、雙人床、衣櫃、電視、冷氣、洗衣機、冰箱、書 櫃、網路、第四台<br><br>房東姓名：陳小姐<br><br>房東電話：0939-999315<br><br>認證：A(1) 認證標章編號 D091500034</div>`)[0];
+            popup_dd91d8d03a094220adc1350935147fe8.setContent(html_dc4812bbe79e4be3b0f8c893c9389788);
+        
+
+        marker_01be598ad12f4aaca151f185fbf54471.bindPopup(popup_dd91d8d03a094220adc1350935147fe8)
+        ;
+
+        
+    
+    
+            var marker_84e467cf2811459c97aab6fc0235b6bf = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_3b06306ea37c4cc59dca7e5f1bedc790 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84e467cf2811459c97aab6fc0235b6bf.setIcon(icon_3b06306ea37c4cc59dca7e5f1bedc790);
+        
+    
+        var popup_da3875f0c4ca4a1c8dfd768d1617ca73 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e8ef5a7681f34b6aadcce13ba94aadda = $(`<div id="html_e8ef5a7681f34b6aadcce13ba94aadda" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址： 台中市南屯區永春南路61巷17號2F之  3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、衣櫥、冷氣、冰箱、洗衣機、單人床、飲水機、 網路<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020061</div>`)[0];
+            popup_da3875f0c4ca4a1c8dfd768d1617ca73.setContent(html_e8ef5a7681f34b6aadcce13ba94aadda);
+        
+
+        marker_84e467cf2811459c97aab6fc0235b6bf.bindPopup(popup_da3875f0c4ca4a1c8dfd768d1617ca73)
+        ;
+
+        
+    
+    
+            var marker_c60334d062b24e87aa401b66f6b31157 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_87691a62c8e641d5bf9589b825d38ff2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c60334d062b24e87aa401b66f6b31157.setIcon(icon_87691a62c8e641d5bf9589b825d38ff2);
+        
+    
+        var popup_99824d51ad304039bc48d2f6f44827ad = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_8d1fabf0663245a0aa2f502088ab7db0 = $(`<div id="html_8d1fabf0663245a0aa2f502088ab7db0" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址： 台中市南屯區永春南路61巷52號  (嶺東太子)<br><br>房型：套房<br><br>坪數：6-7坪<br><br>付款方式：學期繳<br><br>房租：6000-6700/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、雙人床、桌椅、網 路、第四台、中庭停車場<br><br>房東姓名：謝先生<br><br>房東電話：0937-792038<br><br>認證：A(3) 認證標章編號 LTU1020106</div>`)[0];
+            popup_99824d51ad304039bc48d2f6f44827ad.setContent(html_8d1fabf0663245a0aa2f502088ab7db0);
+        
+
+        marker_c60334d062b24e87aa401b66f6b31157.bindPopup(popup_99824d51ad304039bc48d2f6f44827ad)
+        ;
+
+        
+    
+    
+            var marker_fcc00803acf24bae8491be5e74c53986 = L.marker(
+                [24.138341, 120.611377],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_7c0bf138fc5140df856b0b7b3a2175d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fcc00803acf24bae8491be5e74c53986.setIcon(icon_7c0bf138fc5140df856b0b7b3a2175d3);
+        
+    
+        var popup_7dc8ae57b4e34fedb0e6f04256ef2586 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_33eab875a00d4042a6d8196ae6049422 = $(`<div id="html_33eab875a00d4042a6d8196ae6049422" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市永春南路61巷6號 (萬寶大歐洲)<br><br>房型：雅房<br><br>坪數：4-10坪<br><br>付款方式：月繳<br><br>房租：4000-6000/月 (不含電費.瓦斯)<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、單人床、桌椅、網路、第四 台<br><br>房東姓名：蔡小姐<br><br>房東電話：0910-875345<br><br>認證：A(1) 認證標章編號 LTU1020085</div>`)[0];
+            popup_7dc8ae57b4e34fedb0e6f04256ef2586.setContent(html_33eab875a00d4042a6d8196ae6049422);
+        
+
+        marker_fcc00803acf24bae8491be5e74c53986.bindPopup(popup_7dc8ae57b4e34fedb0e6f04256ef2586)
+        ;
+
+        
+    
+    
+            var marker_d71cc11515d7403bb096a0da922ed8e8 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_6c1cdaf6e93748db81bbeac4db308cc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d71cc11515d7403bb096a0da922ed8e8.setIcon(icon_6c1cdaf6e93748db81bbeac4db308cc2);
+        
+    
+        var popup_9d2582861f024760bfdf78505be5dd0e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_30543cf850e3403a926a0f2da1b95f53 = $(`<div id="html_30543cf850e3403a926a0f2da1b95f53" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷12-10號 (嶺東太子)<br><br>房型：套房<br><br>坪數：4-7坪<br><br>付款方式：學期繳<br><br>房租：5200-6200/月<br><br>設備：熱水器、桌椅、單(雙)人床、衣櫃、書櫃、電視冰箱、飲水機、 冷氣、洗衣機、網路、第四台<br><br>房東姓名：鄭先生<br><br>房東電話：0912-302723<br><br>認證：A(3) 認證標章編號 D091500035</div>`)[0];
+            popup_9d2582861f024760bfdf78505be5dd0e.setContent(html_30543cf850e3403a926a0f2da1b95f53);
+        
+
+        marker_d71cc11515d7403bb096a0da922ed8e8.bindPopup(popup_9d2582861f024760bfdf78505be5dd0e)
+        ;
+
+        
+    
+    
+            var marker_c0ca11261f28417fa021310e86e49a20 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_2a2821cd650745ee9749cf69ab134162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0ca11261f28417fa021310e86e49a20.setIcon(icon_2a2821cd650745ee9749cf69ab134162);
+        
+    
+        var popup_c239431b08aa4ff886fcd0c383af8ae2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_7aa541ce82c04341a75d7686a641adba = $(`<div id="html_7aa541ce82c04341a75d7686a641adba" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷12-25號 (嶺東太子)<br><br>房型：套房<br><br>坪數：4-5坪<br><br>付款方式：學期繳<br><br>房租：4900起/月<br><br>設備：熱水器、桌椅、單人床、電視、冰箱、洗衣機、飲水機、冷氣、 衣櫃、網路、脫水機<br><br>房東姓名：陳小姐<br><br>房東電話：0919-018386<br><br>認證：A(6) 認證標章編號 D091500024</div>`)[0];
+            popup_c239431b08aa4ff886fcd0c383af8ae2.setContent(html_7aa541ce82c04341a75d7686a641adba);
+        
+
+        marker_c0ca11261f28417fa021310e86e49a20.bindPopup(popup_c239431b08aa4ff886fcd0c383af8ae2)
+        ;
+
+        
+    
+    
+            var marker_c16f59e232ed4a74b5fc0571a1655415 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_edd54b1e2735486f9852f3838d6b4744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c16f59e232ed4a74b5fc0571a1655415.setIcon(icon_edd54b1e2735486f9852f3838d6b4744);
+        
+    
+        var popup_f386a5fc4dab4dba8325823effc68b52 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_349e57dd71054cabbe386189ebd996ff = $(`<div id="html_349e57dd71054cabbe386189ebd996ff" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷12-5號 (嶺東太子)<br><br>房型：套房<br><br>坪數：4.5坪<br><br>付款方式：學期繳<br><br>房租：5200/月<br><br>設備：熱水器、桌椅、單人床、衣櫃、電視、冷氣、冰箱、洗衣機、脫 水機、飲水機<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 D091500015</div>`)[0];
+            popup_f386a5fc4dab4dba8325823effc68b52.setContent(html_349e57dd71054cabbe386189ebd996ff);
+        
+
+        marker_c16f59e232ed4a74b5fc0571a1655415.bindPopup(popup_f386a5fc4dab4dba8325823effc68b52)
+        ;
+
+        
+    
+    
+            var marker_48dde66cdde44535bb2afc6c374f5ff8 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_dc07729054a04fe58b437a3078e79228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48dde66cdde44535bb2afc6c374f5ff8.setIcon(icon_dc07729054a04fe58b437a3078e79228);
+        
+    
+        var popup_715ec3eedec545418096e77b364e0587 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_48d4ade4ce07486686dd6751632f06ef = $(`<div id="html_48d4ade4ce07486686dd6751632f06ef" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷12之19號(嶺東太子)<br><br>房型：套房<br><br>坪數：6-8坪<br><br>付款方式：半年繳<br><br>房租：5200-6500/月<br><br>設備：熱水器、電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、單(雙)人 床、桌椅、網路、第四台<br><br>房東姓名：蔡小姐<br><br>房東電話：0937-206737 0963-272302<br><br>認證：A(5) 認證標章編號 LTU1020073</div>`)[0];
+            popup_715ec3eedec545418096e77b364e0587.setContent(html_48d4ade4ce07486686dd6751632f06ef);
+        
+
+        marker_48dde66cdde44535bb2afc6c374f5ff8.bindPopup(popup_715ec3eedec545418096e77b364e0587)
+        ;
+
+        
+    
+    
+            var marker_faf2921fdf08450f8a55f3996a2a333c = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_d089cb2640b54be9a59e12f057d4e641 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_faf2921fdf08450f8a55f3996a2a333c.setIcon(icon_d089cb2640b54be9a59e12f057d4e641);
+        
+    
+        var popup_894ece5908eb48c3a761ab2e905c48ab = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_3501110f5ec44be1bd5827b1d71ee469 = $(`<div id="html_3501110f5ec44be1bd5827b1d71ee469" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷12之20號(嶺東太子)<br><br>房型：套房<br><br>坪數：6-8坪<br><br>付款方式：半年繳<br><br>房租：5200-6500/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、單(雙)人床、桌椅、網路、第四台<br><br>房東姓名：蔡小姐<br><br>房東電話：04-22913101 0963-272302 0937-206737<br><br>認證：A(5) 認證標章編號 LTU1020074</div>`)[0];
+            popup_894ece5908eb48c3a761ab2e905c48ab.setContent(html_3501110f5ec44be1bd5827b1d71ee469);
+        
+
+        marker_faf2921fdf08450f8a55f3996a2a333c.bindPopup(popup_894ece5908eb48c3a761ab2e905c48ab)
+        ;
+
+        
+    
+    
+            var marker_b56ba6a2b4ad4ee38b4d1cb8998b503c = L.marker(
+                [24.138308, 120.611305],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_331325c4fa80427e93b87624d288a645 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b56ba6a2b4ad4ee38b4d1cb8998b503c.setIcon(icon_331325c4fa80427e93b87624d288a645);
+        
+    
+        var popup_1ef88a372a9b43d2abcee0785b0d6d0f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_adaafe7500d9450baf815b335773325c = $(`<div id="html_adaafe7500d9450baf815b335773325c" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷12號<br><br>房型：套房<br><br>坪數：4坪<br><br>付款方式：學期繳<br><br>房租：5000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、雙人床、桌椅、網路<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A(3) 認證標章編號 LTU113</div>`)[0];
+            popup_1ef88a372a9b43d2abcee0785b0d6d0f.setContent(html_adaafe7500d9450baf815b335773325c);
+        
+
+        marker_b56ba6a2b4ad4ee38b4d1cb8998b503c.bindPopup(popup_1ef88a372a9b43d2abcee0785b0d6d0f)
+        ;
+
+        
+    
+    
+            var marker_169246bd0f6b462ea87e24d7ec8a50d6 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_c89c576787f749c68536e61c92722992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_169246bd0f6b462ea87e24d7ec8a50d6.setIcon(icon_c89c576787f749c68536e61c92722992);
+        
+    
+        var popup_5dcfa9c7e03949eb89f14d5e76fd712e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_77c26698f2b042268c6ec13dab9ddbb5 = $(`<div id="html_77c26698f2b042268c6ec13dab9ddbb5" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號 10F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020069</div>`)[0];
+            popup_5dcfa9c7e03949eb89f14d5e76fd712e.setContent(html_77c26698f2b042268c6ec13dab9ddbb5);
+        
+
+        marker_169246bd0f6b462ea87e24d7ec8a50d6.bindPopup(popup_5dcfa9c7e03949eb89f14d5e76fd712e)
+        ;
+
+        
+    
+    
+            var marker_0fd18a3e045043c3a1da6abbf2d35061 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_29364df6c4a742bbb8bca9368f21a0a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fd18a3e045043c3a1da6abbf2d35061.setIcon(icon_29364df6c4a742bbb8bca9368f21a0a1);
+        
+    
+        var popup_48cdaba07f2a443f90a097bdcdaec46a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_deddb91546df43fdaf3009e6f945c7f4 = $(`<div id="html_deddb91546df43fdaf3009e6f945c7f4" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號 12F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020070</div>`)[0];
+            popup_48cdaba07f2a443f90a097bdcdaec46a.setContent(html_deddb91546df43fdaf3009e6f945c7f4);
+        
+
+        marker_0fd18a3e045043c3a1da6abbf2d35061.bindPopup(popup_48cdaba07f2a443f90a097bdcdaec46a)
+        ;
+
+        
+    
+    
+            var marker_934c52a51a0f43de8f7330705ffcc808 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_3d5c22f5bcd1474a800713c396fb7a5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_934c52a51a0f43de8f7330705ffcc808.setIcon(icon_3d5c22f5bcd1474a800713c396fb7a5f);
+        
+    
+        var popup_ae3d4b54fd394a86a9968b2ec5ec5f09 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b709e9f02f6a4a90b458a2448055c53e = $(`<div id="html_b709e9f02f6a4a90b458a2448055c53e" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷17號11樓之5(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：7500/月<br><br>設備：桌椅、衣櫃、單人床、書櫃、電視、冰箱、冷氣、洗衣機、飲水 機、網路、第四台<br><br>房東姓名：陳先生<br><br>房東電話：0919-556735<br><br>認證：A(1) 認證標章編號 LTU1020082</div>`)[0];
+            popup_ae3d4b54fd394a86a9968b2ec5ec5f09.setContent(html_b709e9f02f6a4a90b458a2448055c53e);
+        
+
+        marker_934c52a51a0f43de8f7330705ffcc808.bindPopup(popup_ae3d4b54fd394a86a9968b2ec5ec5f09)
+        ;
+
+        
+    
+    
+            var marker_44e5de138dca4ccdbbf2d8be3aa063fe = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_9c1c955a52c84acfbf141facaf4e459b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44e5de138dca4ccdbbf2d8be3aa063fe.setIcon(icon_9c1c955a52c84acfbf141facaf4e459b);
+        
+    
+        var popup_c91b072b3eee4ab3a785072cf74a1afb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f66133a9899b4ecd8eab5c42c8165a73 = $(`<div id="html_f66133a9899b4ecd8eab5c42c8165a73" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號3F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020062</div>`)[0];
+            popup_c91b072b3eee4ab3a785072cf74a1afb.setContent(html_f66133a9899b4ecd8eab5c42c8165a73);
+        
+
+        marker_44e5de138dca4ccdbbf2d8be3aa063fe.bindPopup(popup_c91b072b3eee4ab3a785072cf74a1afb)
+        ;
+
+        
+    
+    
+            var marker_fc7fdcce159b4f7da55d4de006b5ef2a = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_fc182d6ee9e841a58cde01ee85772f99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc7fdcce159b4f7da55d4de006b5ef2a.setIcon(icon_fc182d6ee9e841a58cde01ee85772f99);
+        
+    
+        var popup_e6e6c41b55a94a54bcf85d62e11c02e1 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d26b45c907814b0cab10af01546df18c = $(`<div id="html_d26b45c907814b0cab10af01546df18c" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號4F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A(3) 認證標章編號 LTU1020063</div>`)[0];
+            popup_e6e6c41b55a94a54bcf85d62e11c02e1.setContent(html_d26b45c907814b0cab10af01546df18c);
+        
+
+        marker_fc7fdcce159b4f7da55d4de006b5ef2a.bindPopup(popup_e6e6c41b55a94a54bcf85d62e11c02e1)
+        ;
+
+        
+    
+    
+            var marker_c8c4b083ed6c4816a16ec3bf5ade7be8 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_ceda7259668341d9b35ab95610ac08f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8c4b083ed6c4816a16ec3bf5ade7be8.setIcon(icon_ceda7259668341d9b35ab95610ac08f2);
+        
+    
+        var popup_2367de0c14d24e31b117b0aa66e24de7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_326752baa5214981a17fbcb3d985ff85 = $(`<div id="html_326752baa5214981a17fbcb3d985ff85" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號5F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020064</div>`)[0];
+            popup_2367de0c14d24e31b117b0aa66e24de7.setContent(html_326752baa5214981a17fbcb3d985ff85);
+        
+
+        marker_c8c4b083ed6c4816a16ec3bf5ade7be8.bindPopup(popup_2367de0c14d24e31b117b0aa66e24de7)
+        ;
+
+        
+    
+    
+            var marker_f028262e6c684d4186af78ad8396f127 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_c2b0464148aa4a00a1d4d25cf20a062d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f028262e6c684d4186af78ad8396f127.setIcon(icon_c2b0464148aa4a00a1d4d25cf20a062d);
+        
+    
+        var popup_bf949f1251204d7f920c8f260edc2822 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_29869596b1134022bb68899e0959349c = $(`<div id="html_29869596b1134022bb68899e0959349c" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號6F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020065</div>`)[0];
+            popup_bf949f1251204d7f920c8f260edc2822.setContent(html_29869596b1134022bb68899e0959349c);
+        
+
+        marker_f028262e6c684d4186af78ad8396f127.bindPopup(popup_bf949f1251204d7f920c8f260edc2822)
+        ;
+
+        
+    
+    
+            var marker_ee3734e1601c445b9889cd37a37ccc61 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_d2d62faab49441b7ba03c8e45c8716f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee3734e1601c445b9889cd37a37ccc61.setIcon(icon_d2d62faab49441b7ba03c8e45c8716f7);
+        
+    
+        var popup_419d1e1b194d4ade85c39f5e80111767 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e82e0d0509bb460db4c81b4605744899 = $(`<div id="html_e82e0d0509bb460db4c81b4605744899" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號7F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020066</div>`)[0];
+            popup_419d1e1b194d4ade85c39f5e80111767.setContent(html_e82e0d0509bb460db4c81b4605744899);
+        
+
+        marker_ee3734e1601c445b9889cd37a37ccc61.bindPopup(popup_419d1e1b194d4ade85c39f5e80111767)
+        ;
+
+        
+    
+    
+            var marker_6ee42e06aa13452a9a2256e1b39487ff = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_c8b8b1b4aa6341cba349980093f73ecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ee42e06aa13452a9a2256e1b39487ff.setIcon(icon_c8b8b1b4aa6341cba349980093f73ecb);
+        
+    
+        var popup_f2a1e586f74f478f8f779f1034a25fa1 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2a710ae09794413aaa76b81d76d0a9db = $(`<div id="html_2a710ae09794413aaa76b81d76d0a9db" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號8F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020067</div>`)[0];
+            popup_f2a1e586f74f478f8f779f1034a25fa1.setContent(html_2a710ae09794413aaa76b81d76d0a9db);
+        
+
+        marker_6ee42e06aa13452a9a2256e1b39487ff.bindPopup(popup_f2a1e586f74f478f8f779f1034a25fa1)
+        ;
+
+        
+    
+    
+            var marker_44cf3627361741ef8d4930d746077be5 = L.marker(
+                [24.137867, 120.61165],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_1c3bff00733e4704bdceb4275c8f2fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44cf3627361741ef8d4930d746077be5.setIcon(icon_1c3bff00733e4704bdceb4275c8f2fcc);
+        
+    
+        var popup_017bccb18e454730bb881716fa16ebc4 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e9e01f64c35b45429f361a40f55e5f41 = $(`<div id="html_e9e01f64c35b45429f361a40f55e5f41" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路61巷17號9F之3(新太子)<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：8000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、冰箱、洗衣機、脫水機、飲水 機、網路、冷氣<br><br>房東姓名：林先生<br><br>房東電話：0932-672583<br><br>認證：A 認證標章編號 LTU1020068</div>`)[0];
+            popup_017bccb18e454730bb881716fa16ebc4.setContent(html_e9e01f64c35b45429f361a40f55e5f41);
+        
+
+        marker_44cf3627361741ef8d4930d746077be5.bindPopup(popup_017bccb18e454730bb881716fa16ebc4)
+        ;
+
+        
+    
+    
+            var marker_89b9ce93874c4e849d50b1c62b6553e6 = L.marker(
+                [24.138341, 120.611377],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_bb41ee176ad348aeafadfc2036fc6f59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89b9ce93874c4e849d50b1c62b6553e6.setIcon(icon_bb41ee176ad348aeafadfc2036fc6f59);
+        
+    
+        var popup_f1e7f88c62184741910d9a825f9989f5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f15687b0828a483598cd6d08b4ec6ed8 = $(`<div id="html_f15687b0828a483598cd6d08b4ec6ed8" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷2號1-2樓(萬寶大歐洲)<br><br>房型：雅房<br><br>坪數：2-5坪<br><br>付款方式：學期繳<br><br>房租：15000~20000 /學期<br><br>設備：熱水器、桌椅、衣櫃、冰箱、冷氣、單人床、洗水機、網路<br><br>房東姓名：李先生<br><br>房東電話：0937-767777 04-23115116<br><br>認證：A 認證標章編號 D091500046</div>`)[0];
+            popup_f1e7f88c62184741910d9a825f9989f5.setContent(html_f15687b0828a483598cd6d08b4ec6ed8);
+        
+
+        marker_89b9ce93874c4e849d50b1c62b6553e6.bindPopup(popup_f1e7f88c62184741910d9a825f9989f5)
+        ;
+
+        
+    
+    
+            var marker_fc8d88a5115741229672b19ec0adbd02 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_b67d92879b3744e98d44154536258963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc8d88a5115741229672b19ec0adbd02.setIcon(icon_b67d92879b3744e98d44154536258963);
+        
+    
+        var popup_5f4f8828b0a3436496d817af05057665 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_534e81958ee64457a28c6733ac00191d = $(`<div id="html_534e81958ee64457a28c6733ac00191d" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷40號 (嶺東太子)<br><br>房型：套房<br><br>坪數：5.5坪<br><br>付款方式：學期繳<br><br>房租：6000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、雙人床、桌椅、網 路、第四台、停車場<br><br>房東姓名：鄭小姐<br><br>房東電話：0920-260628<br><br>認證：A(4) 認證標章編號 D091500110</div>`)[0];
+            popup_5f4f8828b0a3436496d817af05057665.setContent(html_534e81958ee64457a28c6733ac00191d);
+        
+
+        marker_fc8d88a5115741229672b19ec0adbd02.bindPopup(popup_5f4f8828b0a3436496d817af05057665)
+        ;
+
+        
+    
+    
+            var marker_dbee34f04af4412b8f9b6c76648bcc94 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_9915a8d949284d498a46281c17dfa919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbee34f04af4412b8f9b6c76648bcc94.setIcon(icon_9915a8d949284d498a46281c17dfa919);
+        
+    
+        var popup_fba2c535c6ad4224b15f8e342d1cb513 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9c20a1a8a6ea4f88b60404e68ae2c52f = $(`<div id="html_9c20a1a8a6ea4f88b60404e68ae2c52f" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷46號 (嶺東太子)<br><br>房型：套房<br><br>坪數：5-7坪<br><br>付款方式：學期繳<br><br>房租：5500-6500/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、單人床、桌椅、網 路、第四台<br><br>房東姓名：方小姐<br><br>房東電話：0932-644156<br><br>認證：A(4) 認證標章編號 LTU1020083</div>`)[0];
+            popup_fba2c535c6ad4224b15f8e342d1cb513.setContent(html_9c20a1a8a6ea4f88b60404e68ae2c52f);
+        
+
+        marker_dbee34f04af4412b8f9b6c76648bcc94.bindPopup(popup_fba2c535c6ad4224b15f8e342d1cb513)
+        ;
+
+        
+    
+    
+            var marker_bc4e54698c504564a71c0b0e8d6f5048 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_2970779cbf014e68864fc5baaaf5f5a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc4e54698c504564a71c0b0e8d6f5048.setIcon(icon_2970779cbf014e68864fc5baaaf5f5a5);
+        
+    
+        var popup_bb7afa887d0b4c4288528067d0db893f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2633edb9b38f427998ce33e6c028a693 = $(`<div id="html_2633edb9b38f427998ce33e6c028a693" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷48號 (嶺東太子)<br><br>房型：套房<br><br>坪數：5坪<br><br>付款方式：季繳<br><br>房租：6000/月<br><br>設備：冰箱、冷氣、洗衣機、飲水機、衣櫃、雙人床、書桌、網路、抬 燈、電熱水器、機車停車位<br><br>房東姓名：洪先生<br><br>房東電話：0937-286318<br><br>認證：A(1) 認證標章編號 LTU106005</div>`)[0];
+            popup_bb7afa887d0b4c4288528067d0db893f.setContent(html_2633edb9b38f427998ce33e6c028a693);
+        
+
+        marker_bc4e54698c504564a71c0b0e8d6f5048.bindPopup(popup_bb7afa887d0b4c4288528067d0db893f)
+        ;
+
+        
+    
+    
+            var marker_4774690eaa314744ba23b9f56fbbf334 = L.marker(
+                [24.138341, 120.611377],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_fe402a7e0cd746ff815c1d67642502f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4774690eaa314744ba23b9f56fbbf334.setIcon(icon_fe402a7e0cd746ff815c1d67642502f9);
+        
+    
+        var popup_15331d52f9c24093b95e23541e4609c5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_922d8b22ef7545ce80aa8f3585181ad9 = $(`<div id="html_922d8b22ef7545ce80aa8f3585181ad9" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷8號12-5樓(萬寶大歐洲)<br><br>房型：套房<br><br>坪數：6坪<br><br>付款方式：學期繳<br><br>房租：5000/月 (含大樓管理費)<br><br>設備：桌椅、雙人床、衣櫃、電視、冰箱、冷氣、洗衣機、網路、電熱 水器、第四台<br><br>房東姓名：蔡小姐<br><br>房東電話：0928-059907<br><br>認證：A(3) 認證標章編號 D091500045</div>`)[0];
+            popup_15331d52f9c24093b95e23541e4609c5.setContent(html_922d8b22ef7545ce80aa8f3585181ad9);
+        
+
+        marker_4774690eaa314744ba23b9f56fbbf334.bindPopup(popup_15331d52f9c24093b95e23541e4609c5)
+        ;
+
+        
+    
+    
+            var marker_4b1d4655ce604165a656ac8444af10f1 = L.marker(
+                [24.138341, 120.611377],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_b955864b5bf04880828f107fa3da96af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b1d4655ce604165a656ac8444af10f1.setIcon(icon_b955864b5bf04880828f107fa3da96af);
+        
+    
+        var popup_794c2b59e9cd4f8e9b7b3cee62d52245 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_66c2a69aa67744b98a94ff620f23442d = $(`<div id="html_66c2a69aa67744b98a94ff620f23442d" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷8號15樓之6(萬寶大歐洲)<br><br>房型：套房<br><br>坪數：5.5坪<br><br>付款方式：學期繳<br><br>房租：5000/月<br><br>設備：瓦斯、熱水器、電視、冰箱、脫水機、飲水機、椅子、單人床、 衣櫥、網路、第四台<br><br>房東姓名：楊小姐<br><br>房東電話：0927-794858<br><br>認證：A(1) 認證標章編號 D091500025</div>`)[0];
+            popup_794c2b59e9cd4f8e9b7b3cee62d52245.setContent(html_66c2a69aa67744b98a94ff620f23442d);
+        
+
+        marker_4b1d4655ce604165a656ac8444af10f1.bindPopup(popup_794c2b59e9cd4f8e9b7b3cee62d52245)
+        ;
+
+        
+    
+    
+            var marker_1952b0920dbc42eb862b96806e56da82 = L.marker(
+                [24.138341, 120.611377],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_aa21553fa3da418cbe0fb56d4d892bd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1952b0920dbc42eb862b96806e56da82.setIcon(icon_aa21553fa3da418cbe0fb56d4d892bd8);
+        
+    
+        var popup_7d824105ed144ce5bad816a169c5635f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_34f820d75df34c79bc6ef06ef20e11c4 = $(`<div id="html_34f820d75df34c79bc6ef06ef20e11c4" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷8號2-1樓(萬寶大歐洲)<br><br>房型：套房<br><br>坪數：6坪<br><br>付款方式：學期繳<br><br>房租：5500/月<br><br>設備：桌椅、單(雙)人床、衣櫃、書櫃、電視、冰箱、冷氣、洗衣機、熱 水器、網路、第四台<br><br>房東姓名：蔡小姐<br><br>房東電話：0978-915699<br><br>認證：A(2) 認證標章編號 D091500044</div>`)[0];
+            popup_7d824105ed144ce5bad816a169c5635f.setContent(html_34f820d75df34c79bc6ef06ef20e11c4);
+        
+
+        marker_1952b0920dbc42eb862b96806e56da82.bindPopup(popup_7d824105ed144ce5bad816a169c5635f)
+        ;
+
+        
+    
+    
+            var marker_5ae8bf52f16f45cb823a79ebfdbfb46b = L.marker(
+                [24.138249, 120.611454],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_6a047edaa3084870af6ee2afe64edb74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ae8bf52f16f45cb823a79ebfdbfb46b.setIcon(icon_6a047edaa3084870af6ee2afe64edb74);
+        
+    
+        var popup_33f80c5f5a7549fca2fe4b9c97c3e71f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_6670ee9b755a410391320ff8e1eb69e0 = $(`<div id="html_6670ee9b755a410391320ff8e1eb69e0" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路61巷8號7-5樓(萬寶大歐洲)<br><br>房型：套房雅房<br><br>坪數：5坪<br><br>付款方式：月繳<br><br>房租：4200-6500/月<br><br>設備：電視、冰箱、冷氣、桌椅、洗衣機、飲水機、衣櫃、單(雙)人床、 網路、第四台<br><br>房東姓名：邱小姐<br><br>房東電話：0935-862333<br><br>認證：A(3) 認證標章編號 LTU1020090</div>`)[0];
+            popup_33f80c5f5a7549fca2fe4b9c97c3e71f.setContent(html_6670ee9b755a410391320ff8e1eb69e0);
+        
+
+        marker_5ae8bf52f16f45cb823a79ebfdbfb46b.bindPopup(popup_33f80c5f5a7549fca2fe4b9c97c3e71f)
+        ;
+
+        
+    
+    
+            var marker_d83c59da10334c9c837cb73d190cce09 = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_f010f41618c94bf593ffe1de3f1b0676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d83c59da10334c9c837cb73d190cce09.setIcon(icon_f010f41618c94bf593ffe1de3f1b0676);
+        
+    
+        var popup_0fb447b1e7a3475ca6699d2bf7ead9ec = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2ca762b900564e4f92476f4ad49471df = $(`<div id="html_2ca762b900564e4f92476f4ad49471df" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區永春南路85號 (嶺東太子)<br><br>房型：套房<br><br>坪數：4-5坪<br><br>付款方式：學期繳<br><br>房租：5000/月<br><br>設備：熱水器、桌椅、單人床、衣櫥、電視、冰箱、冷氣、洗衣機、飲 水機、網路、第四台<br><br>房東姓名：沈先生<br><br>房東電話：0910-234808<br><br>認證：A(10) 認證標章編號 D091500020</div>`)[0];
+            popup_0fb447b1e7a3475ca6699d2bf7ead9ec.setContent(html_2ca762b900564e4f92476f4ad49471df);
+        
+
+        marker_d83c59da10334c9c837cb73d190cce09.bindPopup(popup_0fb447b1e7a3475ca6699d2bf7ead9ec)
+        ;
+
+        
+    
+    
+            var marker_f4cd650cf0944f2ebba3d8d882ad191a = L.marker(
+                [24.138137, 120.611306],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_d51278d189944702a6f12152701d15bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4cd650cf0944f2ebba3d8d882ad191a.setIcon(icon_d51278d189944702a6f12152701d15bb);
+        
+    
+        var popup_fd08b5bfbec04628a43b679dcae498c3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a8c67635e1f34ac495c55ec1342460a4 = $(`<div id="html_a8c67635e1f34ac495c55ec1342460a4" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區永春南路91號 (嶺東太子)<br><br>房型：套房<br><br>坪數：4-5坪<br><br>付款方式：學期繳<br><br>房租：5000/月<br><br>設備：熱水器、桌椅、單人床、衣櫃、電視、冰箱、洗衣機、冷氣、 飲水機、網路、第四台<br><br>房東姓名：洪小姐<br><br>房東電話：0923-550840<br><br>認證：A 認證標章編號 D091500052</div>`)[0];
+            popup_fd08b5bfbec04628a43b679dcae498c3.setContent(html_a8c67635e1f34ac495c55ec1342460a4);
+        
+
+        marker_f4cd650cf0944f2ebba3d8d882ad191a.bindPopup(popup_fd08b5bfbec04628a43b679dcae498c3)
+        ;
+
+        
+    
+    
+            var marker_c58ab1f7220546e1b1b273c9110c0b61 = L.marker(
+                [24.137581, 120.611359],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_4a4ba2bf3e814eed97064b760c773e2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c58ab1f7220546e1b1b273c9110c0b61.setIcon(icon_4a4ba2bf3e814eed97064b760c773e2e);
+        
+    
+        var popup_348b35a2c1a341e0ab7d88a26fd0e13b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_97912adfe7d34d06814b92ee1ad91ff1 = $(`<div id="html_97912adfe7d34d06814b92ee1ad91ff1" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區忠勇路23-25號 (親家學園)<br><br>房型：套房<br><br>坪數：4-6坪<br><br>付款方式：月繳<br><br>房租：5500-6500/月<br><br>設備：電視、冰箱、冷氣、沙發、衣 櫃、單雙人床、書櫃、桌椅、網 路、第四台、電話<br><br>房東姓名：親家學園<br><br>房東電話：0926-359545 04-23860065<br><br>認證：A(2) 認證標章編號 LTU1020096</div>`)[0];
+            popup_348b35a2c1a341e0ab7d88a26fd0e13b.setContent(html_97912adfe7d34d06814b92ee1ad91ff1);
+        
+
+        marker_c58ab1f7220546e1b1b273c9110c0b61.bindPopup(popup_348b35a2c1a341e0ab7d88a26fd0e13b)
+        ;
+
+        
+    
+    
+            var marker_8440270ca7444af29654ba01cd155434 = L.marker(
+                [24.138299, 120.611445],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_615f6cfc8c6441958f9927e0d667fb66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8440270ca7444af29654ba01cd155434.setIcon(icon_615f6cfc8c6441958f9927e0d667fb66);
+        
+    
+        var popup_8bf9867f81b943a7b947939fc3bc7e91 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_09ec4963d60c4ff49675c4fb080b3714 = $(`<div id="html_09ec4963d60c4ff49675c4fb080b3714" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：南    屯區永春南路61巷12-21號<br><br>房型：套房<br><br>坪數：7坪<br><br>付款方式：學期繳<br><br>房租：6300/月<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、雙人床、桌椅、網路<br><br>房東姓名：張先生<br><br>房東電話：0978-915699<br><br>認證：A(4)+A7:L90 認證標章編號 LTU1070125</div>`)[0];
+            popup_8bf9867f81b943a7b947939fc3bc7e91.setContent(html_09ec4963d60c4ff49675c4fb080b3714);
+        
+
+        marker_8440270ca7444af29654ba01cd155434.bindPopup(popup_8bf9867f81b943a7b947939fc3bc7e91)
+        ;
+
+        
+    
+    
+            var marker_85bbf9a0cb0947f3be27445ddf121e51 = L.marker(
+                [24.137689, 120.612507],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_56a164e1435749ceafd16fec8394eec1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_85bbf9a0cb0947f3be27445ddf121e51.setIcon(icon_56a164e1435749ceafd16fec8394eec1);
+        
+    
+        var popup_bb873f8faf5b4c388d06e8a5963e0add = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_6ca7c094fee048a7892b789e523d52a6 = $(`<div id="html_6ca7c094fee048a7892b789e523d52a6" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：可<br><br>地址： 台中市南屯區忠勇路24-2號<br><br>房型：雅房<br><br>坪數：5坪<br><br>付款方式：學期繳<br><br>房租：3000/月<br><br>設備：冷氣、冰箱、電熱水器、網路、 脫水機、飲水機、監視器、床、桌椅、書櫃、衣櫥、置物架、滅 火器、偵煙器、緊急照明燈<br><br>房東姓名：陳先生<br><br>房東電話：0920-036859<br><br>認證：A(3) 認證標章編號 D091500005</div>`)[0];
+            popup_bb873f8faf5b4c388d06e8a5963e0add.setContent(html_6ca7c094fee048a7892b789e523d52a6);
+        
+
+        marker_85bbf9a0cb0947f3be27445ddf121e51.bindPopup(popup_bb873f8faf5b4c388d06e8a5963e0add)
+        ;
+
+        
+    
+    
+            var marker_4c2dfbf8fe474db79f69541aa7e8e45c = L.marker(
+                [24.136901, 120.612581],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_cbb006328b15466ba0a4b868e7d3f9a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c2dfbf8fe474db79f69541aa7e8e45c.setIcon(icon_cbb006328b15466ba0a4b868e7d3f9a6);
+        
+    
+        var popup_ba4c26949df346c6a8e7872632ef6334 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a9a64cf2d9b14230884df86f80874b6d = $(`<div id="html_a9a64cf2d9b14230884df86f80874b6d" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區忠勇路18-17號<br><br>房型：套房<br><br>坪數：4-5坪<br><br>付款方式：學期繳<br><br>房租：25000-29000/ 學期<br><br>設備：熱水器、桌椅、床鋪、衣櫥、冷氣、洗衣機、脫水機、飲水機、 停車場、網路<br><br>房東姓名：楊小姐<br><br>房東電話：0955-538568<br><br>認證：A(2) 認證標章編號 LTU1020057</div>`)[0];
+            popup_ba4c26949df346c6a8e7872632ef6334.setContent(html_a9a64cf2d9b14230884df86f80874b6d);
+        
+
+        marker_4c2dfbf8fe474db79f69541aa7e8e45c.bindPopup(popup_ba4c26949df346c6a8e7872632ef6334)
+        ;
+
+        
+    
+    
+            var marker_2c11b7df70cc453188eab128e5b9549c = L.marker(
+                [24.138036, 120.612543],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_2219af6e8f8f45919159db34629f63e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c11b7df70cc453188eab128e5b9549c.setIcon(icon_2219af6e8f8f45919159db34629f63e6);
+        
+    
+        var popup_2fa917af4db7470b961f5da5297b862c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_519afc9a402f4a18a43845c9ab9a5f09 = $(`<div id="html_519afc9a402f4a18a43845c9ab9a5f09" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區忠勇路32-8號<br><br>房型：套房<br><br>坪數：5-6坪<br><br>付款方式：月繳<br><br>房租：5500-6000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、脫水機、飲水機、衣櫃、單人床、 書桌、網路、第四台、監視器<br><br>房東姓名：洪小姐<br><br>房東電話：049-2310877 0937-215281<br><br>認證：A(6) 認證標章編號 LTU1020099</div>`)[0];
+            popup_2fa917af4db7470b961f5da5297b862c.setContent(html_519afc9a402f4a18a43845c9ab9a5f09);
+        
+
+        marker_2c11b7df70cc453188eab128e5b9549c.bindPopup(popup_2fa917af4db7470b961f5da5297b862c)
+        ;
+
+        
+    
+    
+            var marker_9acc9573911d4b83a955df00826d0cbe = L.marker(
+                [24.137221, 120.612231],
+                {}
+            ).addTo(marker_cluster_db817868eb894f5cb72dd6aa5e23f1b9);
+        
+    
+            var icon_a49046a77b00481a8d26e3221687bb2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9acc9573911d4b83a955df00826d0cbe.setIcon(icon_a49046a77b00481a8d26e3221687bb2f);
+        
+    
+        var popup_cfc2f0ba041a4b9fa7aa6caa68e7a79c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5ad8f224d95845caa92786cf416a5da2 = $(`<div id="html_5ad8f224d95845caa92786cf416a5da2" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區忠勇路20號<br><br>房型：套房<br><br>坪數：6-7坪<br><br>付款方式：月繳<br><br>房租：6000-7000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、雙人床、書桌、網 路、第四台、電梯、停車場<br><br>房東姓名：嚴小姐<br><br>房東電話：0937-056649 0933-448569<br><br>認證：A(4) 認證標章編號 LTU1020105</div>`)[0];
+            popup_cfc2f0ba041a4b9fa7aa6caa68e7a79c.setContent(html_5ad8f224d95845caa92786cf416a5da2);
+        
+
+        marker_9acc9573911d4b83a955df00826d0cbe.bindPopup(popup_cfc2f0ba041a4b9fa7aa6caa68e7a79c)
+        ;
+
+        
+    
+</script>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_39dd660d96a445e4ab9dbd9af38fc35f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_39dd660d96a445e4ab9dbd9af38fc35f" ></div>
+        
+</body>
+<script>    
+    
+            var map_39dd660d96a445e4ab9dbd9af38fc35f = L.map(
+                "map_39dd660d96a445e4ab9dbd9af38fc35f",
+                {
+                    center: [23.5, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3b819c8f42ed4968812b6f271b403d56 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_39dd660d96a445e4ab9dbd9af38fc35f);
+        
+    
+            var marker_cluster_4e01d2308fba464f8e5ebda992a35fc7 = L.markerClusterGroup(
+                {}
+            );
+            map_39dd660d96a445e4ab9dbd9af38fc35f.addLayer(marker_cluster_4e01d2308fba464f8e5ebda992a35fc7);
+        
+    
+            var marker_ec7a3a84a1ca414f9deaa83525b34e9c = L.marker(
+                [24.138896, 120.609937],
+                {}
+            ).addTo(marker_cluster_4e01d2308fba464f8e5ebda992a35fc7);
+        
+    
+            var icon_47c691691e63441b810b793083a5cb95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec7a3a84a1ca414f9deaa83525b34e9c.setIcon(icon_47c691691e63441b810b793083a5cb95);
+        
+    
+        var popup_a7d41f4568f3497080350d627a09f67a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_4aa674c08de3465f82933de78fc643c5 = $(`<div id="html_4aa674c08de3465f82933de78fc643c5" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區嶺東路22號<br><br>房型：套房<br><br>坪數：3-5坪<br><br>付款方式：學期繳<br><br>房租：22000- 28000 /學期<br><br>設備：熱水器、桌椅、床鋪、衣櫥、冷氣、洗衣機、脫水機、飲水機、 滅火器、電梯、冰箱 、網路<br><br>房東姓名：陳先生<br><br>房東電話：0932-511378<br><br>認證：A(1) 認證標章編號 D091500021</div>`)[0];
+            popup_a7d41f4568f3497080350d627a09f67a.setContent(html_4aa674c08de3465f82933de78fc643c5);
+        
+
+        marker_ec7a3a84a1ca414f9deaa83525b34e9c.bindPopup(popup_a7d41f4568f3497080350d627a09f67a)
+        ;
+
+        
+    
+    
+            var marker_2bf6b51e932c4de2b583cd5db612a8a0 = L.marker(
+                [24.140341, 120.610322],
+                {}
+            ).addTo(marker_cluster_4e01d2308fba464f8e5ebda992a35fc7);
+        
+    
+            var icon_7c54286bcfee45168edb85f5fe521b49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2bf6b51e932c4de2b583cd5db612a8a0.setIcon(icon_7c54286bcfee45168edb85f5fe521b49);
+        
+    
+        var popup_e3ec5772a3c0443ab7aa75b596367530 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_bf5b914034d54fc08d0ddfa63b5a2aee = $(`<div id="html_bf5b914034d54fc08d0ddfa63b5a2aee" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區嶺東路80巷7號<br><br>房型：雅房<br><br>坪數：5-6坪<br><br>付款方式：月繳<br><br>房租：3500-4000/月<br><br>設備：桌椅、單人床、衣櫥、電視、冷氣、熱水器、客廳、洗衣機、飲 水機、網路、第四台<br><br>房東姓名：胡先生<br><br>房東電話：04-23892939 0918-756686<br><br>認證：A(1) 認證標章編號 D091500027</div>`)[0];
+            popup_e3ec5772a3c0443ab7aa75b596367530.setContent(html_bf5b914034d54fc08d0ddfa63b5a2aee);
+        
+
+        marker_2bf6b51e932c4de2b583cd5db612a8a0.bindPopup(popup_e3ec5772a3c0443ab7aa75b596367530)
+        ;
+
+        
+    
+    
+            var marker_429ccc90d4be4b74b316ea909be92153 = L.marker(
+                [24.140341, 120.610322],
+                {}
+            ).addTo(marker_cluster_4e01d2308fba464f8e5ebda992a35fc7);
+        
+    
+            var icon_5bfbddf664b04cf3912fb1a6c0d27d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_429ccc90d4be4b74b316ea909be92153.setIcon(icon_5bfbddf664b04cf3912fb1a6c0d27d64);
+        
+    
+        var popup_6750acd3b1e5463788f84a29e5fbd5c3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f06aae716f414bec9b4c75952fd1c98c = $(`<div id="html_f06aae716f414bec9b4c75952fd1c98c" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區嶺東路80巷7號<br><br>房型：雅房<br><br>坪數：5-6坪<br><br>付款方式：月繳<br><br>房租：3500-4000/月<br><br>設備：桌椅、單人床、衣櫥、電視、冷氣、熱水器、客廳、洗衣機、飲 水機、網路、第四台<br><br>房東姓名：胡先生<br><br>房東電話：04-23892939 0918-756686<br><br>認證：A(1) 認證標章編號 D091500027</div>`)[0];
+            popup_6750acd3b1e5463788f84a29e5fbd5c3.setContent(html_f06aae716f414bec9b4c75952fd1c98c);
+        
+
+        marker_429ccc90d4be4b74b316ea909be92153.bindPopup(popup_6750acd3b1e5463788f84a29e5fbd5c3)
+        ;
+
+        
+    
+    
+            var marker_ee38fab9fe544c54bcee32b9c2982aef = L.marker(
+                [24.138433, 120.609935],
+                {}
+            ).addTo(marker_cluster_4e01d2308fba464f8e5ebda992a35fc7);
+        
+    
+            var icon_045e424ce1fc45f487671f8d3a37fdfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee38fab9fe544c54bcee32b9c2982aef.setIcon(icon_045e424ce1fc45f487671f8d3a37fdfa);
+        
+    
+        var popup_d830523c8bd14d20b4cd1122df2ca019 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_77a28db6e0164b8ebb3c7189300b7859 = $(`<div id="html_77a28db6e0164b8ebb3c7189300b7859" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區嶺東路8-2號4樓<br><br>房型：套房<br><br>坪數：4坪<br><br>付款方式：學期繳<br><br>房租：26000/學期<br><br>設備：熱水器、桌椅、床鋪、檯燈、衣櫥、電視、冰箱、冷氣、風扇、 洗衣機、脫水機、飲水機<br><br>房東姓名：楊小姐<br><br>房東電話：0933-500372 04-25610088<br><br>認證：A(3) 認證標章編號 D091500022</div>`)[0];
+            popup_d830523c8bd14d20b4cd1122df2ca019.setContent(html_77a28db6e0164b8ebb3c7189300b7859);
+        
+
+        marker_ee38fab9fe544c54bcee32b9c2982aef.bindPopup(popup_d830523c8bd14d20b4cd1122df2ca019)
+        ;
+
+        
+    
+</script>

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b3d9575418884cd5a4ee979755f66433 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b3d9575418884cd5a4ee979755f66433" ></div>
+        
+</body>
+<script>    
+    
+            var map_b3d9575418884cd5a4ee979755f66433 = L.map(
+                "map_b3d9575418884cd5a4ee979755f66433",
+                {
+                    center: [23.5, 121.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c545c4f8815845678eb2fb6aea4c2970 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b3d9575418884cd5a4ee979755f66433);
+        
+    
+            var marker_cluster_550cc698d2bb4946be929a6cc2341e28 = L.markerClusterGroup(
+                {}
+            );
+            map_b3d9575418884cd5a4ee979755f66433.addLayer(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var marker_09b10880f20d4bfba5f262fedbcd2b4b = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_d7610a1510334f2c97f00cf2c7c668ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09b10880f20d4bfba5f262fedbcd2b4b.setIcon(icon_d7610a1510334f2c97f00cf2c7c668ba);
+        
+    
+        var popup_f10b5b38c8a04df0bbe1dc017de4ef98 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_63484eaa50464398b5af27b6c22bbfe1 = $(`<div id="html_63484eaa50464398b5af27b6c22bbfe1" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區建功路107號4樓之2  (得意家族)<br><br>房型：套房雅房<br><br>坪數：3-4坪 3-5坪<br><br>付款方式：半年繳<br><br>房租：3100-3300/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、床鋪、衣櫥、電視、冰箱、客廳、、洗衣機、逃 生梯<br><br>房東姓名：王小姐<br><br>房東電話：0930-877602<br><br>認證：A 認證標章編號 D091500048</div>`)[0];
+            popup_f10b5b38c8a04df0bbe1dc017de4ef98.setContent(html_63484eaa50464398b5af27b6c22bbfe1);
+        
+
+        marker_09b10880f20d4bfba5f262fedbcd2b4b.bindPopup(popup_f10b5b38c8a04df0bbe1dc017de4ef98)
+        ;
+
+        
+    
+    
+            var marker_676ce8a0e5ba4802b51b4b07a5790c60 = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_3b482185607545ce8f1c64e136b99622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_676ce8a0e5ba4802b51b4b07a5790c60.setIcon(icon_3b482185607545ce8f1c64e136b99622);
+        
+    
+        var popup_9b189141beb04cdba966e5ffd6324692 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_826581a3a07f48f58541e8fe4a5226f0 = $(`<div id="html_826581a3a07f48f58541e8fe4a5226f0" style="width: 100.0%; height: 100.0%;">限制： 女<br><br>租屋補貼：可<br><br>地址： 台中市南屯區建功路107號6樓之8  (得意家族)<br><br>房型：套房雅房<br><br>坪數：3-8坪<br><br>付款方式：學期繳年繳<br><br>房租：4300-8400/月 (含管理費、網路、機車停車 位)<br><br>設備：冰箱、冷氣、洗脫衣機、衣櫃、單人床、雙人床(含床墊)、書桌 (單、雙人)、熱水器、WIFI<br><br>房東姓名：湯小姐<br><br>房東電話：0903-902345<br><br>認證：A(4) 認證標章編號 D091500039</div>`)[0];
+            popup_9b189141beb04cdba966e5ffd6324692.setContent(html_826581a3a07f48f58541e8fe4a5226f0);
+        
+
+        marker_676ce8a0e5ba4802b51b4b07a5790c60.bindPopup(popup_9b189141beb04cdba966e5ffd6324692)
+        ;
+
+        
+    
+    
+            var marker_23c935ff41584b03b9feccc2b03cd489 = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_987eafda856547ce920c02bd483f8ed5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23c935ff41584b03b9feccc2b03cd489.setIcon(icon_987eafda856547ce920c02bd483f8ed5);
+        
+    
+        var popup_5e3182dbc491424c8b9b21f2c220dc98 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_19aabd2f3d0d43d1a636236d7c5a37de = $(`<div id="html_19aabd2f3d0d43d1a636236d7c5a37de" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區建功路107號8樓之6  (得意家族)<br><br>房型：公寓 4房<br><br>坪數：35坪<br><br>付款方式：學期繳<br><br>房租：18000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、沙發、衣櫃、單人床(雅房)、雙人床 (套房)、桌椅、網路、MOD<br><br>房東姓名：張先生<br><br>房東電話：0932-960909<br><br>認證：A 認證標章編號 LTU1020072</div>`)[0];
+            popup_5e3182dbc491424c8b9b21f2c220dc98.setContent(html_19aabd2f3d0d43d1a636236d7c5a37de);
+        
+
+        marker_23c935ff41584b03b9feccc2b03cd489.bindPopup(popup_5e3182dbc491424c8b9b21f2c220dc98)
+        ;
+
+        
+    
+    
+            var marker_4ea7aaed52ea414bbbbd54e096f053c3 = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_ae17730caec3400b8d2eb70fd12c9436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ea7aaed52ea414bbbbd54e096f053c3.setIcon(icon_ae17730caec3400b8d2eb70fd12c9436);
+        
+    
+        var popup_e2d0a5d45fde46cea25f19e1aa184a48 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f7a8b4c065014b328c6af41c8376112d = $(`<div id="html_f7a8b4c065014b328c6af41c8376112d" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：可<br><br>地址： 台中市南屯區春安二街153號  (得意家族)<br><br>房型：套房整層<br><br>坪數：3-12坪<br><br>付款方式：學期繳年繳<br><br>房租：4500-13000 /月<br><br>設備：電視、冰箱(個人)、冷氣、洗脫衣 機、3人衣櫃、單人床、雙人上下舖、書桌(單人、3人)、熱水器(個 人)、電子鎖、獨立電表、WIFI<br><br>房東姓名：湯小姐<br><br>房東電話：0903-902345<br><br>認證：A(4) 認證標章編號 D091500119</div>`)[0];
+            popup_e2d0a5d45fde46cea25f19e1aa184a48.setContent(html_f7a8b4c065014b328c6af41c8376112d);
+        
+
+        marker_4ea7aaed52ea414bbbbd54e096f053c3.bindPopup(popup_e2d0a5d45fde46cea25f19e1aa184a48)
+        ;
+
+        
+    
+    
+            var marker_68a8e42b66074872b1e7f856d114cda3 = L.marker(
+                [24.133316, 120.610485],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_e743cc574bec4bf681182786de2e7014 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_68a8e42b66074872b1e7f856d114cda3.setIcon(icon_e743cc574bec4bf681182786de2e7014);
+        
+    
+        var popup_13937d3cbc4d4c5d95d2501bd181340b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_431a66896c004e38aac2968849737548 = $(`<div id="html_431a66896c004e38aac2968849737548" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區忠勇路19-87號<br><br>房型：套房<br><br>坪數：7-8坪<br><br>付款方式：半年繳<br><br>房租：33000-40800/ 學期<br><br>設備：電視機、電冰箱、冷氣機、洗衣機、衣櫃、雙人床、桌椅、網 路、第四台<br><br>房東姓名：柯小姐<br><br>房東電話：0953-874268<br><br>認證：A(4) 認證標章編號 LTU1060001</div>`)[0];
+            popup_13937d3cbc4d4c5d95d2501bd181340b.setContent(html_431a66896c004e38aac2968849737548);
+        
+
+        marker_68a8e42b66074872b1e7f856d114cda3.bindPopup(popup_13937d3cbc4d4c5d95d2501bd181340b)
+        ;
+
+        
+    
+    
+            var marker_50be89eb52514a0fad2908f4e68686ab = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_039e365dc0f9416ab84bc8c3d414358b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50be89eb52514a0fad2908f4e68686ab.setIcon(icon_039e365dc0f9416ab84bc8c3d414358b);
+        
+    
+        var popup_de67da10d0014d309368379624f61dd7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0f009bc222754e8ba31d8b623a2e73ac = $(`<div id="html_0f009bc222754e8ba31d8b623a2e73ac" style="width: 100.0%; height: 100.0%;">限制：男<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路107-12號1-2樓 (得意家族)<br><br>房型：套房雅房<br><br>坪數：4坪<br><br>付款方式：年繳優惠<br><br>房租：3500-3800/月<br><br>設備：桌椅、單人床、衣櫥、電視、冰箱、冷氣、熱水器、洗衣機、飲 水機<br><br>房東姓名：陳先生<br><br>房東電話：0933-933556<br><br>認證：A(1) 認證標章編號 D091500051</div>`)[0];
+            popup_de67da10d0014d309368379624f61dd7.setContent(html_0f009bc222754e8ba31d8b623a2e73ac);
+        
+
+        marker_50be89eb52514a0fad2908f4e68686ab.bindPopup(popup_de67da10d0014d309368379624f61dd7)
+        ;
+
+        
+    
+    
+            var marker_ec9b41c112614499a57314281ac18b95 = L.marker(
+                [24.136564, 120.607374],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_70b2811f16464038a9edb8faf709f13a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec9b41c112614499a57314281ac18b95.setIcon(icon_70b2811f16464038a9edb8faf709f13a);
+        
+    
+        var popup_388bb0f69cef40fa89dcf8d589e053db = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_79e20e18bff148b68f40111f2a4e332d = $(`<div id="html_79e20e18bff148b68f40111f2a4e332d" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路107之23號1-2樓(得意家族)<br><br>房型：套房雅房<br><br>坪數：3坪<br><br>付款方式：年繳<br><br>房租：3500/月 (含水電網路、 管理費)<br><br>設備：瓦斯、熱水器、桌椅、床鋪、衣櫥、冰箱、冷氣、洗衣機、脫水 機、網路<br><br>房東姓名：李太太<br><br>房東電話：0921-616053 02-22626089<br><br>認證：A(1) 認證標章編號 D091500032</div>`)[0];
+            popup_388bb0f69cef40fa89dcf8d589e053db.setContent(html_79e20e18bff148b68f40111f2a4e332d);
+        
+
+        marker_ec9b41c112614499a57314281ac18b95.bindPopup(popup_388bb0f69cef40fa89dcf8d589e053db)
+        ;
+
+        
+    
+    
+            var marker_159392f6f8cf48419e119f2ba96c0587 = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_ff25e808c3234b0a85df5ca0f060caaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_159392f6f8cf48419e119f2ba96c0587.setIcon(icon_ff25e808c3234b0a85df5ca0f060caaf);
+        
+    
+        var popup_eeccaabe2d6c475cb4d12a9d0bc3ffbf = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_bcb60f50af574b50a29dcc919504006c = $(`<div id="html_bcb60f50af574b50a29dcc919504006c" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路107之3號 (得意家族)<br><br>房型：套房雅房<br><br>坪數：3.5坪<br><br>付款方式：學期繳<br><br>房租：3000/月<br><br>設備：桌椅、床鋪、衣櫥、冰箱、電 扇、  熱水器、洗衣機、脫水機、 飲水機、網路、電梯、停車場<br><br>房東姓名：曾太太<br><br>房東電話：04-22067229 0972-087088<br><br>認證：A(3) 認證標章編號 D091500050</div>`)[0];
+            popup_eeccaabe2d6c475cb4d12a9d0bc3ffbf.setContent(html_bcb60f50af574b50a29dcc919504006c);
+        
+
+        marker_159392f6f8cf48419e119f2ba96c0587.bindPopup(popup_eeccaabe2d6c475cb4d12a9d0bc3ffbf)
+        ;
+
+        
+    
+    
+            var marker_e15403f4ba44426a838bfe0a796ce0a1 = L.marker(
+                [24.136564, 120.607374],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_9eb329c76b224704a5ade16791805fc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e15403f4ba44426a838bfe0a796ce0a1.setIcon(icon_9eb329c76b224704a5ade16791805fc7);
+        
+    
+        var popup_93baf545c7e54af3934724da55d43d51 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_aa3ed096117d4fb2859788871adf3ef6 = $(`<div id="html_aa3ed096117d4fb2859788871adf3ef6" style="width: 100.0%; height: 100.0%;">限制：男<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路107號3樓之 10(得意家族)<br><br>房型：套房雅房<br><br>坪數：4-5坪<br><br>付款方式：學期繳<br><br>房租：4000-6000/月 (含大樓管理費)<br><br>設備：桌椅、單(雙)人床、冰箱、冷氣、洗衣機、衣櫃、網路、瓦斯、熱 水器<br><br>房東姓名：張小姐<br><br>房東電話：0963-716555 04-23387798<br><br>認證：A 認證標章編號 D091500029</div>`)[0];
+            popup_93baf545c7e54af3934724da55d43d51.setContent(html_aa3ed096117d4fb2859788871adf3ef6);
+        
+
+        marker_e15403f4ba44426a838bfe0a796ce0a1.bindPopup(popup_93baf545c7e54af3934724da55d43d51)
+        ;
+
+        
+    
+    
+            var marker_6c5361dde3874ddc89c21e7ad5d23d57 = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_b68c0e4f44d54573b4f779413f1f2955 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c5361dde3874ddc89c21e7ad5d23d57.setIcon(icon_b68c0e4f44d54573b4f779413f1f2955);
+        
+    
+        var popup_380a73fe443e48cdbc8bd2b939e94cef = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c8c715addb7747de8fe89cedc2eea526 = $(`<div id="html_c8c715addb7747de8fe89cedc2eea526" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路107號3樓之 17(得意家族)<br><br>房型：套房雅房<br><br>坪數：3-4坪 4-5坪<br><br>付款方式：學期繳<br><br>房租：21000-36000/ 學期(含水電、 管理費)<br><br>設備：瓦斯、熱水器、桌椅、床鋪、電視、洗衣機<br><br>房東姓名：周小姐<br><br>房東電話：0923-105028<br><br>認證：A(1) 認證標章編號 D091500041</div>`)[0];
+            popup_380a73fe443e48cdbc8bd2b939e94cef.setContent(html_c8c715addb7747de8fe89cedc2eea526);
+        
+
+        marker_6c5361dde3874ddc89c21e7ad5d23d57.bindPopup(popup_380a73fe443e48cdbc8bd2b939e94cef)
+        ;
+
+        
+    
+    
+            var marker_ed43ccbf7bef431c8fd6cc21912fd6c9 = L.marker(
+                [24.136574, 120.607245],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_0c2f90287ffa4b599e1cf52498c8c16e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed43ccbf7bef431c8fd6cc21912fd6c9.setIcon(icon_0c2f90287ffa4b599e1cf52498c8c16e);
+        
+    
+        var popup_f80709fe365d400e91be80c0ce32f3eb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_148a44de450a4d168e1189404f4c0537 = $(`<div id="html_148a44de450a4d168e1189404f4c0537" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路107號4樓之1 (得意家族)<br><br>房型：套房<br><br>坪數：5-8坪<br><br>付款方式：學期繳年繳<br><br>房租：5900-8900/月 (含管理費、網路、第四台、 機車停車位)<br><br>設備：電視、冰箱(個人)、冷氣、洗脫衣 機、衣櫃、單人床(雙人上下舖)、書桌(單人或雙人)、熱水器(個 人)、電子鎖、獨立電表、WIFI<br><br>房東姓名：湯小姐<br><br>房東電話：0903-902345<br><br>認證：A(1) 認證標章編號 LTU1020100</div>`)[0];
+            popup_f80709fe365d400e91be80c0ce32f3eb.setContent(html_148a44de450a4d168e1189404f4c0537);
+        
+
+        marker_ed43ccbf7bef431c8fd6cc21912fd6c9.bindPopup(popup_f80709fe365d400e91be80c0ce32f3eb)
+        ;
+
+        
+    
+    
+            var marker_b1411823a7a54f7598ceedfc1221b603 = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_369d7feea98e42e2a4d4e26d84fbdf75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1411823a7a54f7598ceedfc1221b603.setIcon(icon_369d7feea98e42e2a4d4e26d84fbdf75);
+        
+    
+        var popup_d225a83acd124dd69e37176c5a6e248c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b7a3fb2e6e624d838b78e4240bd4554b = $(`<div id="html_b7a3fb2e6e624d838b78e4240bd4554b" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路107號7樓之20 (得意家族)<br><br>房型：公寓<br><br>坪數：50坪<br><br>付款方式：學期繳<br><br>房租：13000/月<br><br>設備：桌椅、床鋪、衣櫥、冷氣、客 廳、、熱水器、冰箱、洗衣機、 電梯、逃生梯、停車場<br><br>房東姓名：王先生<br><br>房東電話：0908-856028<br><br>認證：A(1) 認證標章編號 D091500038</div>`)[0];
+            popup_d225a83acd124dd69e37176c5a6e248c.setContent(html_b7a3fb2e6e624d838b78e4240bd4554b);
+        
+
+        marker_b1411823a7a54f7598ceedfc1221b603.bindPopup(popup_d225a83acd124dd69e37176c5a6e248c)
+        ;
+
+        
+    
+    
+            var marker_5caa54264a3c406e91f2917d5b40071f = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_0e4cec08e4fd498094dbab5ac9a791cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5caa54264a3c406e91f2917d5b40071f.setIcon(icon_0e4cec08e4fd498094dbab5ac9a791cf);
+        
+    
+        var popup_c731273e8dc74340a1ac1fb5f8df6d91 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e8685c080e9a48d2a94c0763fa43b0da = $(`<div id="html_e8685c080e9a48d2a94c0763fa43b0da" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路107號8樓之3 (得意家族)<br><br>房型：套房雅房<br><br>坪數：4-5坪<br><br>付款方式：年繳<br><br>房租：4500-5000/月 (含水電網路、 管理費)<br><br>設備：桌椅、單人床、衣櫥、冷氣、瓦斯、熱水器、冰箱、洗衣機、脫 水機<br><br>房東姓名：李小姐<br><br>房東電話：0921-616053 02-22626089<br><br>認證：A(1) 認證標章編號 D091500031</div>`)[0];
+            popup_c731273e8dc74340a1ac1fb5f8df6d91.setContent(html_e8685c080e9a48d2a94c0763fa43b0da);
+        
+
+        marker_5caa54264a3c406e91f2917d5b40071f.bindPopup(popup_c731273e8dc74340a1ac1fb5f8df6d91)
+        ;
+
+        
+    
+    
+            var marker_d77b222e8f0b4f5cab8a5b55c975046f = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_5814dafcffff40f7b7324ec0b6a6c354 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d77b222e8f0b4f5cab8a5b55c975046f.setIcon(icon_5814dafcffff40f7b7324ec0b6a6c354);
+        
+    
+        var popup_1cd2f77115274489afbf31d1174fdb38 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a596fb19e98a4a1cb9c4c954d62bbbef = $(`<div id="html_a596fb19e98a4a1cb9c4c954d62bbbef" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路107號9樓之19 (得意家族)<br><br>房型：公寓<br><br>坪數：48坪<br><br>付款方式：學期繳<br><br>房租：18000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、沙發、衣櫃、單人床、書桌、網路<br><br>房東姓名：張先生<br><br>房東電話：0911-850859<br><br>認證：A(2) 認證標章編號 D091500116</div>`)[0];
+            popup_1cd2f77115274489afbf31d1174fdb38.setContent(html_a596fb19e98a4a1cb9c4c954d62bbbef);
+        
+
+        marker_d77b222e8f0b4f5cab8a5b55c975046f.bindPopup(popup_1cd2f77115274489afbf31d1174fdb38)
+        ;
+
+        
+    
+    
+            var marker_46af4fb25aef4ebf8ea4478d5696d77e = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_447d028c5c564cbd96c81513260c841a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46af4fb25aef4ebf8ea4478d5696d77e.setIcon(icon_447d028c5c564cbd96c81513260c841a);
+        
+    
+        var popup_dc051d848c2f416ea8b67e11a618cee5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_341403e50b5c443489f0f077ed3782de = $(`<div id="html_341403e50b5c443489f0f077ed3782de" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路33-10號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：4-6坪<br><br>付款方式：學期繳<br><br>房租：5500-6000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、飲水機、衣櫃、雙人床、桌椅、網 路、第四台<br><br>房東姓名：陳小姐<br><br>房東電話：0972-095033 0928-315859<br><br>認證：A(2) 認證標章編號 LTU1020087</div>`)[0];
+            popup_dc051d848c2f416ea8b67e11a618cee5.setContent(html_341403e50b5c443489f0f077ed3782de);
+        
+
+        marker_46af4fb25aef4ebf8ea4478d5696d77e.bindPopup(popup_dc051d848c2f416ea8b67e11a618cee5)
+        ;
+
+        
+    
+    
+            var marker_1140ab0a35624af792d33970178a5c55 = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_3ce80e55940d48fda8532ce3b3f69123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1140ab0a35624af792d33970178a5c55.setIcon(icon_3ce80e55940d48fda8532ce3b3f69123);
+        
+    
+        var popup_07473bed16eb4535accc5c5e6ce432bd = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_19467b9a84444954846d51fc6c4da363 = $(`<div id="html_19467b9a84444954846d51fc6c4da363" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路33-2號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：4-8坪<br><br>付款方式：月繳<br><br>房租：4800-6700/月<br><br>設備：熱水器、桌椅、雙人床、衣櫃、電視、洗衣、脫水、飲水ˋ冷 氣、冰箱<br><br>房東姓名：陳先生<br><br>房東電話：0920-181813<br><br>認證：A(1) 認證標章編號 D091500078</div>`)[0];
+            popup_07473bed16eb4535accc5c5e6ce432bd.setContent(html_19467b9a84444954846d51fc6c4da363);
+        
+
+        marker_1140ab0a35624af792d33970178a5c55.bindPopup(popup_07473bed16eb4535accc5c5e6ce432bd)
+        ;
+
+        
+    
+    
+            var marker_43317e99541a42ae99d3634bfa4a9beb = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_64aa063023d4463984188f64c62d501f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43317e99541a42ae99d3634bfa4a9beb.setIcon(icon_64aa063023d4463984188f64c62d501f);
+        
+    
+        var popup_5f117f5bd4ca4fef9c0538055535edb9 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_7f16a103471943dd85ce1f01cec636d7 = $(`<div id="html_7f16a103471943dd85ce1f01cec636d7" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路33-3號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：4.5-6 坪<br><br>付款方式：學期繳<br><br>房租：28800-36000/ 學期 (含管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、電視、冰箱、冷氣、洗衣機、飲 水機<br><br>房東姓名：劉先生<br><br>房東電話：04-92320210 0928-311579<br><br>認證：A(3) 認證標章編號 D091500028</div>`)[0];
+            popup_5f117f5bd4ca4fef9c0538055535edb9.setContent(html_7f16a103471943dd85ce1f01cec636d7);
+        
+
+        marker_43317e99541a42ae99d3634bfa4a9beb.bindPopup(popup_5f117f5bd4ca4fef9c0538055535edb9)
+        ;
+
+        
+    
+    
+            var marker_83c7af9e650540159f8741b6ad8eca7a = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_5525fd1903c449ab93d8d48c7fdc8992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83c7af9e650540159f8741b6ad8eca7a.setIcon(icon_5525fd1903c449ab93d8d48c7fdc8992);
+        
+    
+        var popup_6602c8f10be1474f9c574481c77c12b5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_917fe98a8501448f8a0c2b1746ded5cb = $(`<div id="html_917fe98a8501448f8a0c2b1746ded5cb" style="width: 100.0%; height: 100.0%;">限制：女<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路33-5號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5-7坪<br><br>付款方式：學期繳<br><br>房租：4900-6000/月 (含網路、第四 台、水費)<br><br>設備：熱水器、桌椅、單人床、衣櫃、電視、洗衣、脫水、飲水ˋ冷 氣、冰箱、網路、第四台<br><br>房東姓名：方小姐<br><br>房東電話：0932-644156<br><br>認證：A(3) 認證標章編號 D091500077</div>`)[0];
+            popup_6602c8f10be1474f9c574481c77c12b5.setContent(html_917fe98a8501448f8a0c2b1746ded5cb);
+        
+
+        marker_83c7af9e650540159f8741b6ad8eca7a.bindPopup(popup_6602c8f10be1474f9c574481c77c12b5)
+        ;
+
+        
+    
+    
+            var marker_6ccaa074834b42e2af10e551493155e7 = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_3b7bf18604464167a9646895e1afff2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ccaa074834b42e2af10e551493155e7.setIcon(icon_3b7bf18604464167a9646895e1afff2e);
+        
+    
+        var popup_b2759cabea9d4e3fb80ca87527282e80 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ebc4c4a59cd2428c885d09486fdd7484 = $(`<div id="html_ebc4c4a59cd2428c885d09486fdd7484" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路35-10號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：4-6坪<br><br>付款方式：學期繳<br><br>房租：27000-33000/ 學期<br><br>設備：熱水器、單人床、衣櫃、電視、冰箱、冷氣、洗衣機、飲水機<br><br>房東姓名：曾小姐<br><br>房東電話：04-23834634 0912-332961<br><br>認證：A(4) 認證標章編號 D091500017</div>`)[0];
+            popup_b2759cabea9d4e3fb80ca87527282e80.setContent(html_ebc4c4a59cd2428c885d09486fdd7484);
+        
+
+        marker_6ccaa074834b42e2af10e551493155e7.bindPopup(popup_b2759cabea9d4e3fb80ca87527282e80)
+        ;
+
+        
+    
+    
+            var marker_00ca98df7ee34241a4d68a3141e4e7d0 = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_2b3017fe7bf7482fac8343cf0ed80741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00ca98df7ee34241a4d68a3141e4e7d0.setIcon(icon_2b3017fe7bf7482fac8343cf0ed80741);
+        
+    
+        var popup_250007d02b1c4c27b83ebca19d772c7f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2896d3c617294cc4923113e497a4353a = $(`<div id="html_2896d3c617294cc4923113e497a4353a" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路35-11號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5-7坪<br><br>付款方式：學期繳<br><br>房租：4500-5500/月<br><br>設備：熱水器、桌椅、單(雙)人床、衣櫃、電視、洗衣機、飲水機ˋ冷 氣、冰箱、書櫃、網路、第四台<br><br>房東姓名：劉先生<br><br>房東電話：0912-332961 04-23834634<br><br>認證：A(3) 認證標章編號 D091500081</div>`)[0];
+            popup_250007d02b1c4c27b83ebca19d772c7f.setContent(html_2896d3c617294cc4923113e497a4353a);
+        
+
+        marker_00ca98df7ee34241a4d68a3141e4e7d0.bindPopup(popup_250007d02b1c4c27b83ebca19d772c7f)
+        ;
+
+        
+    
+    
+            var marker_01e910119ae142fbbff67aa56580d940 = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_239227e0a4194dd29172d56916c80dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01e910119ae142fbbff67aa56580d940.setIcon(icon_239227e0a4194dd29172d56916c80dba);
+        
+    
+        var popup_0c5008f08aa742db9478fa51986bffb0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_db81ae12cf7f404f908a27c2eec7f741 = $(`<div id="html_db81ae12cf7f404f908a27c2eec7f741" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路35-12號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5坪<br><br>付款方式：學期繳<br><br>房租：5500/月<br><br>設備：熱水器、桌椅、單人床、衣櫃、電視、網路、冰箱、冷氣、洗 衣、脫水機、飲水機<br><br>房東姓名：陳小姐<br><br>房東電話：04-23849296 0928-408881<br><br>認證：A(4) 認證標章編號 D091500016</div>`)[0];
+            popup_0c5008f08aa742db9478fa51986bffb0.setContent(html_db81ae12cf7f404f908a27c2eec7f741);
+        
+
+        marker_01e910119ae142fbbff67aa56580d940.bindPopup(popup_0c5008f08aa742db9478fa51986bffb0)
+        ;
+
+        
+    
+    
+            var marker_2f28c70365b14d878ac6e9ea5847d90e = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_26c345c17e984f3083f9fa0c4cf337fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f28c70365b14d878ac6e9ea5847d90e.setIcon(icon_26c345c17e984f3083f9fa0c4cf337fe);
+        
+    
+        var popup_a114ccefc8c64aea9d210299783d3892 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_92ccd55305da42ebb89c3ec1277c95fb = $(`<div id="html_92ccd55305da42ebb89c3ec1277c95fb" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路35-1號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5坪<br><br>付款方式：學期繳<br><br>房租：4700-5000/月 (含大樓管理費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、電視、冷氣、洗衣機、脫水機、 飲水機、網路<br><br>房東姓名：惠朋國際 蔡小姐<br><br>房東電話：04-22595930 分機205<br><br>認證：A(7) 認證標章編號 D091500018</div>`)[0];
+            popup_a114ccefc8c64aea9d210299783d3892.setContent(html_92ccd55305da42ebb89c3ec1277c95fb);
+        
+
+        marker_2f28c70365b14d878ac6e9ea5847d90e.bindPopup(popup_a114ccefc8c64aea9d210299783d3892)
+        ;
+
+        
+    
+    
+            var marker_92c351e18e6242cfba428ecd9831d440 = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_1845c9e3376d49c0b45d21984d766cf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92c351e18e6242cfba428ecd9831d440.setIcon(icon_1845c9e3376d49c0b45d21984d766cf7);
+        
+    
+        var popup_5452aac2979347c4a12fb5714f4f6258 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_1325a54780444cf9b5ee48750a8c4286 = $(`<div id="html_1325a54780444cf9b5ee48750a8c4286" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：可<br><br>地址：台中市南屯區建功路35-3號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5-7坪<br><br>付款方式：學期繳<br><br>房租：5000-6500/月<br><br>設備：桌椅、床鋪、衣櫃、書櫃、電視 ˋ  冷氣、冰箱、洗衣機、飲水 機、電熱水器、網路、第四台<br><br>房東姓名：洪小姐<br><br>房東電話：0921-755152<br><br>認證：A 認證標章編號 LTU1020089</div>`)[0];
+            popup_5452aac2979347c4a12fb5714f4f6258.setContent(html_1325a54780444cf9b5ee48750a8c4286);
+        
+
+        marker_92c351e18e6242cfba428ecd9831d440.bindPopup(popup_5452aac2979347c4a12fb5714f4f6258)
+        ;
+
+        
+    
+    
+            var marker_36bc62c936aa4355b2b13fd37cadd1eb = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_f906c15cd31e4735860a416a16bab272 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36bc62c936aa4355b2b13fd37cadd1eb.setIcon(icon_f906c15cd31e4735860a416a16bab272);
+        
+    
+        var popup_d41192119e854e4e9f40d19d02807e36 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_30bed3bd6fdb4a20955dc9d1c6ffbde5 = $(`<div id="html_30bed3bd6fdb4a20955dc9d1c6ffbde5" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路35-5號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5-7坪<br><br>付款方式：學期繳<br><br>房租：4500-5500/月<br><br>設備：熱水器、桌椅、單(雙)人床、衣櫃、電視、洗衣機、飲水機ˋ冷 氣、冰箱、書櫃、網路、第四台<br><br>房東姓名：劉先生<br><br>房東電話：0933-531045 0928-408881<br><br>認證：A(4) 認證標章編號 D091500080</div>`)[0];
+            popup_d41192119e854e4e9f40d19d02807e36.setContent(html_30bed3bd6fdb4a20955dc9d1c6ffbde5);
+        
+
+        marker_36bc62c936aa4355b2b13fd37cadd1eb.bindPopup(popup_d41192119e854e4e9f40d19d02807e36)
+        ;
+
+        
+    
+    
+            var marker_e7255774a5b44bcaa48bbef8823f3ab6 = L.marker(
+                [24.135591, 120.610911],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_c5d30abd699844339aec1540c564af98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e7255774a5b44bcaa48bbef8823f3ab6.setIcon(icon_c5d30abd699844339aec1540c564af98);
+        
+    
+        var popup_1be78903611b4524beb863db44cd0b95 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a4efe9e33b4f427cb749be0579ab5938 = $(`<div id="html_a4efe9e33b4f427cb749be0579ab5938" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址：台中市南屯區建功路35-9號 (嶺東大學城)<br><br>房型：套房<br><br>坪數：5-6坪<br><br>付款方式：半年繳<br><br>房租：5000-6500/月 (含網路、管理 費)<br><br>設備：熱水器、桌椅、單人床、衣櫥、電視、冰箱、冷氣、飲水機、洗 衣機、脫水機<br><br>房東姓名：黃先生<br><br>房東電話：0922-927008<br><br>認證：A(2) 認證標章編號 D091500004</div>`)[0];
+            popup_1be78903611b4524beb863db44cd0b95.setContent(html_a4efe9e33b4f427cb749be0579ab5938);
+        
+
+        marker_e7255774a5b44bcaa48bbef8823f3ab6.bindPopup(popup_1be78903611b4524beb863db44cd0b95)
+        ;
+
+        
+    
+    
+            var marker_2ca75487546f43d5be4a3b05f49ce7fd = L.marker(
+                [24.136486, 120.60732],
+                {}
+            ).addTo(marker_cluster_550cc698d2bb4946be929a6cc2341e28);
+        
+    
+            var icon_a4f8f13a9898458da7597b2e58147ee1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ca75487546f43d5be4a3b05f49ce7fd.setIcon(icon_a4f8f13a9898458da7597b2e58147ee1);
+        
+    
+        var popup_5119f8c910fd4966b7de423de5363db0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_62984e25caed409289439a54cdc3d564 = $(`<div id="html_62984e25caed409289439a54cdc3d564" style="width: 100.0%; height: 100.0%;">限制：無<br><br>租屋補貼：nan<br><br>地址： 台中市南屯區建功路107號4樓之23  (得意家族)<br><br>房型：套房雅房<br><br>坪數：7坪 4.5坪<br><br>付款方式：月繳<br><br>房租：6600/月 4000/月<br><br>設備：電視、冰箱、冷氣、洗衣機、衣櫃、單人床、書桌、網路<br><br>房東姓名：王小姐<br><br>房東電話：0971-691620<br><br>認證：A(4) 認證標章編號 LTU106004</div>`)[0];
+            popup_5119f8c910fd4966b7de423de5363db0.setContent(html_62984e25caed409289439a54cdc3d564);
+        
+
+        marker_2ca75487546f43d5be4a3b05f49ce7fd.bindPopup(popup_5119f8c910fd4966b7de423de5363db0)
+        ;
+
+        
+    
+</script>
